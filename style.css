@@ -73,7 +73,7 @@ body > * {
   list-style: none;
   border-bottom: 2px solid var(--text-primary);
   transition: 0.4s ease;
-  text-wrap: nowrap;
+  text-align: center;
   width: 100vw;
 }
 @media (min-width: 600px) {
@@ -81,6 +81,7 @@ body > * {
     width: auto;
     right: calc(-5vw - 135px);
     border-left: 2px solid var(--text-primary);
+    text-align: start;
   }
 }
 .burger-content-active {
