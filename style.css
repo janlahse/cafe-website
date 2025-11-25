@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --text-primary: #444;
+}
+
+body {
+  font-family: "helvetica";
+  color: var(--text-primary);
+  background-color: #fcc;
+  overflow-x: hidden;
+}
+body > * {
+  padding: 10px 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 2px solid var(--text-primary);
+}
+
+.title {
+  display: flex;
+  font-family: "Sofia";
+  cursor: pointer;
+}
+
+.pigeon-icon {
+  height: 3em;
+  padding-right: 3px;
+}
+
+.burger-menu {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.burger-button {
+  height: 38px;
+  aspect-ratio: 1;
+  padding: 5px;
+  border-radius: 1px;
+  background-color: white;
+  fill: var(--text-primary);
+  transition: 0.1s;
+}
+.burger-button:hover,
+.burger-button-active {
+  background-color: var(--text-primary);
+  fill: white;
+}
+
+.burger-content {
+  position: absolute;
+  right: -175px;
+  top: calc(100% + 16px);
+  padding: 0;
+  background-color: white;
+  list-style: none;
+  border-bottom: 2px solid var(--text-primary);
+  border-left: 2px solid var(--text-primary);
+  transition: 0.3s;
+}
+.burger-content-active {
+  right: -40px;
+}
+.burger-content > * {
+  padding: 10px 40px;
+  font-weight: bold;
+  transition: 0.1s;
+}
+.burger-content > *:hover {
+  background-color: var(--text-primary);
+  color: white;
+}
