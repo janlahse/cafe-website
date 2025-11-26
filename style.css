@@ -20,11 +20,13 @@ body {
   color: var(--text-primary);
   background-color: #fcc;
 }
-body > * {
-  padding: 10px 5vw;
+
+main {
+  margin: 0 5vw;
 }
 
 .header {
+  padding: 10px 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,4 +93,12 @@ body > * {
 .burger-content > *:hover {
   background-color: var(--text-primary);
   color: white;
+}
+
+.banner {
+  height: 100px;
+  object-fit: cover;
+  object-position: 0% 87%;
+  margin-bottom: 10px;
+  border-radius: 0 0 10px 10px;
 }
