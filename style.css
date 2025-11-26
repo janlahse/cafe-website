@@ -36,13 +36,20 @@ main {
 
 .title {
   display: flex;
+  align-items: center;
   font-family: "Sofia";
   cursor: pointer;
+  text-wrap: nowrap;
 }
 
 .pigeon-icon {
-  height: 3em;
-  padding-right: 3px;
+  height: 2.2em;
+  transition: 0.5s;
+}
+@media (min-width: 600px) {
+  .pigeon-icon {
+    height: 3em;
+  }
 }
 
 .burger-menu {
