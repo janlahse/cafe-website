@@ -30,6 +30,7 @@ main > * {
 }
 main > p {
   font-size: 1.2em;
+  margin-top: 5px;
 }
 
 a {
@@ -115,10 +116,6 @@ a {
   color: var(--white);
 }
 
-.intro-text {
-  margin-top: 5px;
-}
-
 .banner {
   height: 200px;
   object-fit: cover;
@@ -127,6 +124,7 @@ a {
 }
 
 .opening-hours {
+  width: 100%;
   display: inline-grid;
   grid-template-columns: 1fr auto;
   gap: 10px 40px;
@@ -137,20 +135,81 @@ a {
 .opening-hours > h3 {
   grid-column: 1/3;
 }
+@media (min-width: 400px) {
+  .opening-hours {
+    width: auto;
+  }
+}
+
+.open-menu-button {
+  text-decoration: underline;
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+
+.menu {
+  position: fixed;
+  margin: 0;
+  inset: 100% 0 -100% 0;
+  transition: 1s ease;
+  backdrop-filter: blur(3px);
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+.menu-active {
+  inset: 0;
+}
+
+.menu-card {
+  height: fit-content;
+  max-width: 700px;
+  width: calc(100% - 10vw);
+  margin: 30px 0;
+  display: inline-grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px 20px;
+  background-color: var(--white);
+  border: 2px solid var(--text-primary);
+  padding: 20px;
+  font-size: 1.5em;
+}
+.menu-card > h3 {
+  text-decoration: underline;
+  align-self: center;
+}
+.menu-card > h4 {
+  margin-top: 15px;
+  grid-column: 1/3;
+}
+.oat-disclaimer {
+  grid-column: 1/3;
+  font-size: 0.7em;
+  color: #555;
+}
+
+.close-menu-button {
+  height: 1.8em;
+  aspect-ratio: 1;
+  padding: 8px;
+  justify-self: end;
+  background-color: var(--white);
+  fill: var(--text-primary);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.close-menu-button:hover {
+  background-color: var(--text-primary);
+  fill: var(--white);
+}
 
 footer {
   margin: 0 5vw;
   padding: 20px 0 25px;
   display: flex;
-  justify-content: start;
   flex-wrap: wrap;
-  gap: 20px 40px;
+  gap: 20px 60px;
   border-top: 2px solid var(--text-primary);
-}
-@media (min-width: 800px) {
-  footer {
-    justify-content: end;
-  }
 }
 
 .footer-section {
