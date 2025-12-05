@@ -94,7 +94,7 @@ a {
 
 .burger-content {
   position: absolute;
-  right: calc(-5vw - 135px);
+  right: calc(-5vw - 140px);
   top: calc(100% + 7.5px);
   padding: 0;
   background-color: var(--white);
