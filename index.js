@@ -1,6 +1,7 @@
 const burgerButton = document.querySelector(".burger-button");
 const burgerContent = document.querySelector(".burger-content");
 const burgerIconOuter = document.querySelector(".burger-icon-outer");
+const title = document.querySelector(".title");
 const startLink = document.querySelector(".start-link");
 const hoursLink = document.querySelector(".hours-link");
 const aboutLink = document.querySelector(".about-link");
@@ -29,7 +30,7 @@ document.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  if (startLink.contains(e.target))
+  if (startLink.contains(e.target) || title.contains(e.target))
     startAnchor.scrollIntoView({ behavior: "smooth", block: "start" });
   if (hoursLink.contains(e.target))
     hoursAnchor.scrollIntoView({ behavior: "smooth", block: "start" });
