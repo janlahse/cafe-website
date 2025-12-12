@@ -1,6 +1,16 @@
 const burgerButton = document.querySelector(".burger-button");
 const burgerContent = document.querySelector(".burger-content");
 const burgerIconOuter = document.querySelector(".burger-icon-outer");
+const startLink = document.querySelector(".start-link");
+const hoursLink = document.querySelector(".hours-link");
+const aboutLink = document.querySelector(".about-link");
+const contactLink = document.querySelector(".contact-link");
+const menuLink = document.querySelector(".menu-link");
+const startAnchor = document.querySelector(".start-anchor");
+const hoursAnchor = document.querySelector(".hours-anchor");
+const aboutAnchor = document.querySelector(".about-anchor");
+const contactAnchor = document.querySelector(".contact-anchor");
+const menuAnchor = document.querySelector(".menu-anchor");
 const openMenuButton = document.querySelector(".open-menu-button");
 const closeMenuButton = document.querySelector(".close-menu-button");
 const menu = document.querySelector(".menu");
@@ -16,6 +26,19 @@ document.addEventListener("click", (e) => {
     burgerContent.classList.remove("burger-content-active");
     burgerIconOuter.classList.remove("burger-icon-outer-hide");
   }
+});
+
+document.addEventListener("click", (e) => {
+  if (startLink.contains(e.target))
+    startAnchor.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (hoursLink.contains(e.target))
+    hoursAnchor.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (aboutLink.contains(e.target))
+    aboutAnchor.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (contactLink.contains(e.target))
+    contactAnchor.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (menuLink.contains(e.target))
+    menuAnchor.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 openMenuButton.addEventListener("click", () => {
