@@ -95,15 +95,19 @@ a {
 
 .burger-content {
   position: absolute;
-  right: calc(-5vw - 180px);
-  top: calc(100% + 7.5px);
+  right: calc(-5vw - 185px);
+  top: calc(100% + 5px);
   padding: 0;
   background-color: var(--white);
   border: 2px solid var(--text-primary);
   list-style: none;
   transition: 0.5s ease;
   text-align: start;
-  text-wrap: nowrap;
+}
+@media (min-width: 600px) {
+  .burger-content {
+    top: calc(100% + 7.5px);
+  }
 }
 .burger-content-active {
   right: 0;
@@ -111,6 +115,7 @@ a {
 .burger-content > * {
   padding: 8px 20px;
   font-weight: bold;
+  text-wrap: nowrap;
   transition: 0.1s;
 }
 .burger-content > *:hover {
