@@ -95,7 +95,7 @@ a {
 
 .burger-content {
   position: absolute;
-  right: calc(-5vw - 140px);
+  right: calc(-5vw - 180px);
   top: calc(100% + 7.5px);
   padding: 0;
   background-color: var(--white);
@@ -103,6 +103,7 @@ a {
   list-style: none;
   transition: 0.5s ease;
   text-align: start;
+  text-wrap: nowrap;
 }
 .burger-content-active {
   right: 0;
@@ -115,6 +116,22 @@ a {
 .burger-content > *:hover {
   background-color: var(--text-primary);
   color: var(--white);
+}
+.start-anchor,
+.hours-anchor,
+.about-anchor,
+.contact-anchor,
+.menu-anchor {
+  scroll-margin-top: 80px;
+}
+@media (min-width: 600px) {
+  .start-anchor,
+  .hours-anchor,
+  .about-anchor,
+  .contact-anchor,
+  .menu-anchor {
+    scroll-margin-top: 90px;
+  }
 }
 
 .banner {
