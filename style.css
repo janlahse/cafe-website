@@ -54,7 +54,7 @@ a {
   align-items: center;
   font-family: "Sofia";
   cursor: pointer;
-  text-wrap: nowrap;
+  white-space: pre;
 }
 
 .pigeon-icon {
@@ -95,7 +95,7 @@ a {
 
 .burger-content {
   position: absolute;
-  right: calc(-5vw - 185px);
+  right: calc(-5vw - 190px);
   top: calc(100% + 5px);
   padding: 0;
   background-color: var(--white);
@@ -115,7 +115,7 @@ a {
 .burger-content > * {
   padding: 8px 20px;
   font-weight: bold;
-  text-wrap: nowrap;
+  white-space: pre;
   transition: 0.1s;
 }
 .burger-content > *:hover {
@@ -167,7 +167,7 @@ a {
 .open-menu-button {
   text-decoration: underline;
   cursor: pointer;
-  text-wrap: nowrap;
+  white-space: pre;
 }
 
 .menu {
