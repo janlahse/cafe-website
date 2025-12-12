@@ -17,6 +17,7 @@ body {
 }
 
 body {
+  line-height: 1.8em;
   font-family: "Delius";
   color: var(--text-primary);
   background-color: #fcc;
@@ -107,7 +108,7 @@ a {
   right: 0;
 }
 .burger-content > * {
-  padding: 10px 20px;
+  padding: 8px 20px;
   font-weight: bold;
   transition: 0.1s;
 }
@@ -215,5 +216,8 @@ footer {
 .footer-section {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
 }
