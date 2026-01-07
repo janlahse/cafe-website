@@ -39,6 +39,7 @@ a {
 }
 
 .header {
+  z-index: 1;
   position: sticky;
   top: 0;
   padding: 10px 5vw;
@@ -233,6 +234,10 @@ footer {
   flex-wrap: wrap;
   gap: 20px 60px;
   border-top: 2px solid var(--text-primary);
+}
+.impressum-footer {
+  position: sticky;
+  top: 100%;
 }
 
 .footer-section {
