@@ -172,6 +172,7 @@ a {
 }
 
 .menu {
+  z-index: 2;
   position: fixed;
   margin: 0;
   inset: 100% 0 -100% 0;
