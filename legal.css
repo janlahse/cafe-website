@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Delius";
+  src: url("public/fonts/Delius-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: url("public/fonts/Sofia-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --text-primary: #444;
+  --white: #fcfcfc;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  line-height: 1.8em;
+  font-family: "Delius";
+  color: var(--text-primary);
+  background-color: #ffd7d7;
+}
+
+main {
+  margin: 40px 5vw 20px;
+}
+
+a {
+  color: inherit;
+}
+
+.header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  padding: 10px 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  border-bottom: 2px solid var(--text-primary);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-family: "Sofia";
+  cursor: pointer;
+  white-space: pre;
+}
+
+.pigeon-icon {
+  height: 2.2em;
+  transition: 0.5s;
+}
+@media (min-width: 600px) {
+  .pigeon-icon {
+    height: 3em;
+  }
+}
+
+footer {
+  margin: 0 5vw;
+  padding: 20px 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 60px;
+  border-top: 2px solid var(--text-primary);
+}
+.impressum-footer {
+  position: sticky;
+  top: 100%;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
