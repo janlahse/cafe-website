@@ -40,15 +40,31 @@ body {
 }
 
 main {
-  margin: 80px 10vw;
+  margin: 30px 10vw;
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  gap: 80px;
+  gap: 20px;
+}
+.start-anchor {
+  grid-row: 2/3;
+}
+.contact-anchor {
+  grid-row: 7/8;
+}
+.hours-anchor {
+  grid-row: 6/7;
 }
 @media (min-width: 600px) {
   main {
+    margin: 80px 10vw;
     grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+  .start-anchor,
+  .contact-anchor,
+  .hours-anchor {
+    grid-row: unset;
   }
 }
 main > img {
@@ -152,12 +168,14 @@ a {
   background-color: var(--text-primary);
   color: var(--white);
 }
-.start-anchor,
+.start-anchor {
+  scroll-margin-top: 500px;
+}
 .hours-anchor,
 .about-anchor,
 .contact-anchor,
 .menu-anchor {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 75px;
 }
 @media (min-width: 600px) {
   .start-anchor,
@@ -165,7 +183,7 @@ a {
   .about-anchor,
   .contact-anchor,
   .menu-anchor {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 150px;
   }
 }
 
