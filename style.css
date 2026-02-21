@@ -45,7 +45,8 @@ main {
 main > * {
   margin-top: 20px;
 }
-main > p {
+
+.text-section > * {
   font-size: 1.2em;
   margin-top: 5px;
 }
