@@ -68,9 +68,7 @@ main {
   }
 }
 main > img {
-  border-radius: 5vh;
-  object-fit: cover;
-  height: 100%;
+  border-radius: 20px;
   max-width: 100%;
 }
 
