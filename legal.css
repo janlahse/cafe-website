@@ -24,6 +24,7 @@
 :root {
   --text-primary: #444;
   --white: #fcfcfc;
+  --body-margin: 7vw;
 }
 
 html,
@@ -40,7 +41,7 @@ body {
 }
 
 main {
-  margin: 40px 5vw 20px;
+  margin: 40px var(--body-margin) 20px;
 }
 
 a {
@@ -51,7 +52,7 @@ a {
   z-index: 1;
   position: sticky;
   top: 0;
-  padding: 10px 5vw;
+  padding: 10px var(--body-margin);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,21 +79,22 @@ a {
 }
 
 footer {
-  margin: 0 5vw;
+  margin: 0 var(--body-margin);
   padding: 20px 0 25px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 60px;
+  gap: 20px 10%;
   border-top: 2px solid var(--text-primary);
-}
-.impressum-footer {
   position: sticky;
   top: 100%;
 }
-
 .footer-section {
   display: flex;
   flex-direction: column;
+  max-width: 350px;
+}
+span {
+  white-space: nowrap;
 }
 
 .margin-bottom {

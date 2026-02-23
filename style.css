@@ -24,6 +24,7 @@
 :root {
   --text-primary: #444;
   --white: #fcfcfc;
+  --body-margin: 7vw;
 }
 
 html,
@@ -40,7 +41,7 @@ body {
 }
 
 main {
-  margin: 30px 10vw;
+  margin: 30px var(--body-margin);
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -57,7 +58,7 @@ main {
 }
 @media (min-width: 600px) {
   main {
-    margin: 80px 10vw;
+    margin: 80px var(--body-margin);
     grid-template-columns: 1fr 1fr;
     gap: 80px;
   }
@@ -98,7 +99,7 @@ a {
   z-index: 1;
   position: sticky;
   top: 0;
-  padding: 10px 5vw;
+  padding: 10px var(--body-margin);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -152,7 +153,7 @@ a {
 
 .burger-content {
   position: absolute;
-  right: calc(-5vw - 195px);
+  right: calc(calc(var(--body-margin) * -1) - 195px);
   top: calc(100% + 5px);
   padding: 0;
   background-color: var(--white);
@@ -296,21 +297,21 @@ a {
 }
 
 footer {
-  margin: 0 10vw;
+  margin: 0 var(--body-margin);
   padding: 20px 0 25px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 60px;
+  gap: 20px 10%;
   border-top: 2px solid var(--text-primary);
-}
-.impressum-footer {
-  position: sticky;
-  top: 100%;
 }
 
 .footer-section {
   display: flex;
   flex-direction: column;
+  max-width: 350px;
+}
+span {
+  white-space: nowrap;
 }
 
 .margin-bottom {
